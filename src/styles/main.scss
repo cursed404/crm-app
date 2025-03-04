@@ -1,0 +1,42 @@
+.app-container {
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  
+  .table {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  
+    .table-header, .table-row {
+      display: flex;
+    }
+  
+    .table-header {
+      background-color: #f5f5f5;
+      font-weight: bold;
+      padding: 10px;
+    }
+  
+    .table-body {
+      .table-row {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        transition: background-color 0.2s;
+  
+        &:hover {
+          background-color: #fafafa;
+        }
+  
+        .cell {
+          flex: 1;
+          &.actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  
